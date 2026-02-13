@@ -119,7 +119,7 @@ function getProductData(container) {
         container.querySelector('.price-section .fs-2')?.innerText ||
         container.querySelector('.price-section .fs-1')?.innerText ||
         '0';
-    const img = container.querySelector('.main-image img')?.src;
+    const img = container.querySelector('.main-image img')?.getAttribute('src');
 
     return {
         title: title,

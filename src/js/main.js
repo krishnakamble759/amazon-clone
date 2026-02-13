@@ -5,6 +5,11 @@ import * as bootstrap from 'bootstrap'
 
 console.log('Amazon Clone Initialized')
 
+// Trailing slash fix for GitHub Pages
+if (window.location.pathname.endsWith('/amazon-clone')) {
+    window.location.replace(window.location.href + '/');
+}
+
 // Example: Add search functionality or card hover effects
 document.querySelector('.nav-search button')?.addEventListener('click', () => {
     const query = document.querySelector('.nav-search input').value

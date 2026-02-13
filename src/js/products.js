@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 const imgEl = article.querySelector('.product-img');
-                if (imgEl) item.img = imgEl.src;
+                if (imgEl) item.img = imgEl.getAttribute('src');
 
                 item.price = getText('.product-price');
                 item.original = getText('.product-original-price');
