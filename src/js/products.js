@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const titleLink = clone.querySelector('.card-title a');
             titleLink.textContent = item.title;
             if (item.link) {
-                titleLink.href = item.link;
+                titleLink.setAttribute('href', item.link);
                 titleLink.removeAttribute('target'); // remove blank target for internal link
             }
 

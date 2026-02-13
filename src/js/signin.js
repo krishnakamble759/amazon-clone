@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Amazon behavior: Prompts to create account or shows error.
                 // We will redirect to register page with email pre-filled roughly? or just confirm
                 if (confirm('We cannot find an account with this email address. Would you like to create a new account?')) {
-                    window.location.href = '/register.html';
+                    window.location.href = './register.html';
                 }
                 return;
             }
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const users = JSON.parse(localStorage.getItem('amazon_users') || '{}');
             if (users[email]) {
                 alert('Email already registered. Please sign in.');
-                window.location.href = '/signin.html';
+                window.location.href = './signin.html';
                 return;
             }
 
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('temp_signin_email', email);
 
             alert('Account created successfully!');
-            window.location.href = '/signin.html';
+            window.location.href = './signin.html';
         });
     }
 });
