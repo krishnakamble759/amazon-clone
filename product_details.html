@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <script>(function(){var p=window.location.pathname;if(p.endsWith("/amazon-clone")){window.location.replace(window.location.href+"/")}})();</script>
+    <script>(function () { var p = window.location.pathname; if (p.endsWith("/amazon-clone")) { window.location.replace(window.location.href + "/") } })();</script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -154,7 +154,26 @@
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                         <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="EN"
                                 data-flag="./india.png">
-                                <img src="india.png" alt="India"> English - EN
+                                <img src="india.png" width="20" alt="India"> English - EN
+                            </a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="HI"
+                                data-flag="./india.png">
+                                <img src="india.png" width="20" alt="India"> हिन्दी - HI
+                            </a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="ES"
+                                data-flag="./us.png">
+                                <img src="us.png" width="20" alt="US"> Español - ES
+                            </a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="PT"
+                                data-flag="./brazil.png">
+                                <img src="brazil.png" width="20" alt="Brazil"> Português - PT
+                            </a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2" href="#" data-lang="DE"
+                                data-flag="./germany.png">
+                                <img src="germany.png" width="20" alt="Germany"> Deutsch - DE
                             </a></li>
                     </ul>
                 </div>
@@ -168,9 +187,10 @@
                     <div class="dropdown-menu dropdown-menu-end account-dropdown-menu shadow"
                         aria-labelledby="navAccountDropdown">
                         <div class="text-center mb-3 pb-3 border-bottom sign-in-prompt" id="signInPrompt">
-                            <a href="signin.html" class="btn btn-warning sign-in-btn mb-2 fw-bold">Sign in</a>
-                            <div class="small">New customer? <a href="register.html" class="text-primary">Start
-                                    here.</a>
+                            <a href="signin.html" class="btn btn-warning sign-in-btn mb-2 fw-bold"
+                                style="font-size: 13px;">Sign in</a>
+                            <div class="small" style="font-size: 11px;">New customer? <a href="register.html"
+                                    class="text-primary">Start here.</a>
                             </div>
                         </div>
                         <div class="row">
@@ -210,7 +230,7 @@
                     class="nav-cart d-flex align-items-end mx-2 p-1 position-relative text-decoration-none text-white">
                     <div class="cart-icon-container">
                         <span class="cart-count">0</span>
-                        <img src="cart.png" alt="miniTV Promo">
+                        <img src="cart.png" alt="Cart">
                     </div>
                     <span class="ms-1 fw-bold cart-text">Cart</span>
                 </a>
@@ -219,9 +239,34 @@
 
         <div class="amazon-subnav d-flex align-items-center">
             <div class="subnav-left d-flex align-items-center">
-                <div class="subnav-all p-2 d-flex align-items-center">
+                <div class="subnav-all p-2 d-flex align-items-center" id="sidebarAll">
                     <i class="bi bi-list"></i>
                     <span class="ms-1 fw-bold">All</span>
+                </div>
+                <ul class="subnav-links d-flex align-items-center mb-0 list-unstyled">
+                    <li class="p-2">Best Sellers</li>
+                    <li class="p-2"><a href="products.html?category=mobiles"
+                            class="text-white text-decoration-none">Mobiles</a></li>
+                    <li class="p-2"><a href="products.html?category=fresh"
+                            class="text-white text-decoration-none">Amazon
+                            Fresh</a></li>
+                    <li class="p-2">Today's Deals</li>
+                    <li class="p-2">Customer Service</li>
+                    <li class="p-2"><a href="products.html?category=electronics"
+                            class="text-white text-decoration-none">Electronics</a></li>
+                    <li class="p-2">Prime <i class="bi bi-caret-down-fill text-secondary"></i></li>
+                    <li class="p-2"><a href="products.html?category=fashion"
+                            class="text-white text-decoration-none">Fashion</a></li>
+                    <li class="p-2"><a href="products.html?category=home" class="text-white text-decoration-none">Home &
+                            Kitchen</a></li>
+                    <li class="p-2">New Releases</li>
+                    <li class="p-2">Amazon Pay</li>
+                    <li class="p-2">Books</li>
+                </ul>
+            </div>
+            <div class="subnav-right d-flex align-items-center ms-auto">
+                <div class="promo-banner p-2">
+                    <img src="Physics.png" alt="miniTV Promo">
                 </div>
             </div>
         </div>
@@ -2484,8 +2529,7 @@
                         <div class="sponsored-cleaner border rounded p-2">
                             <div class="row align-items-center g-2">
                                 <div class="col-4">
-                                    <img src="cleaning/seventh.jpg" alt="Seventh Generation"
-                                        class="img-fluid rounded">
+                                    <img src="cleaning/seventh.jpg" alt="Seventh Generation" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">Seventh Generation...</div>
@@ -2800,8 +2844,7 @@
                         <div class="sponsored-cleaner border rounded p-2">
                             <div class="row align-items-center g-2">
                                 <div class="col-4">
-                                    <img src="cleaning/pucimic_stone.jpg" alt="Pumice Stone"
-                                        class="img-fluid rounded">
+                                    <img src="cleaning/pucimic_stone.jpg" alt="Pumice Stone" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">21 Pack Pumice Stone...</div>
@@ -3111,8 +3154,7 @@
                             <div class="row align-items-center g-2 sponsored-cleaner border rounded p-2"
                                 class="sponsored-cleaner">
                                 <div class="col-4">
-                                    <img src="cleaning/randy.jpg" alt="Randy's Black Label"
-                                        class="img-fluid rounded">
+                                    <img src="cleaning/randy.jpg" alt="Randy's Black Label" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">Randy's Black Label Cleaner...</div>
@@ -4024,8 +4066,7 @@
                             <div class="row align-items-center g-2 sponsored-cleaner border rounded p-2"
                                 class="sponsored-cleaner">
                                 <div class="col-4">
-                                    <img src="cleaning/Orchard.jpg" alt="Orchard Laundry"
-                                        class="img-fluid rounded">
+                                    <img src="cleaning/Orchard.jpg" alt="Orchard Laundry" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">Orchard Laundry Detergent Pow...</div>
@@ -8196,8 +8237,7 @@
                         <div class="sponsored-item mt-4 pt-3 border-top">
                             <div class="row align-items-center g-2 sponsored-cleaner border rounded p-2">
                                 <div class="col-4">
-                                    <img src="laptop/lenovo.jpg" alt="Lenovo ThinkPad"
-                                        class="img-fluid rounded">
+                                    <img src="laptop/lenovo.jpg" alt="Lenovo ThinkPad" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">Lenovo ThinkPad E16 Business...</div>
@@ -8327,8 +8367,7 @@
                             </div>
                         </div>
                         <div class="main-image order-1 order-md-2">
-                            <img src="electronics/sony_1.jpg"
-                                alt="Sony WH-1000XM5 Premium Noise Canceling Headphones">
+                            <img src="electronics/sony_1.jpg" alt="Sony WH-1000XM5 Premium Noise Canceling Headphones">
                             <div class="mt-2 small text-secondary text-center">Click to see full view</div>
                         </div>
                     </div>
@@ -8815,8 +8854,7 @@
                             </div>
                         </div>
                         <div class="main-image order-1 order-md-2">
-                            <img src="electronics/speaker_1.jpg"
-                                alt="400W AC-Powered Outdoor Bluetooth Speakers">
+                            <img src="electronics/speaker_1.jpg" alt="400W AC-Powered Outdoor Bluetooth Speakers">
                             <div class="mt-2 small text-secondary text-center">Click to see full view</div>
                         </div>
                     </div>
@@ -8981,8 +9019,7 @@
                         <div class="sponsored-item mt-4 pt-3 border-top">
                             <div class="row align-items-center g-2 sponsored-cleaner border rounded p-2">
                                 <div class="col-4">
-                                    <img src="electronics/speaker_2.jpg" alt="Herdio Speaker"
-                                        class="img-fluid rounded">
+                                    <img src="electronics/speaker_2.jpg" alt="Herdio Speaker" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">Herdio 6.5 Inches Outdoor Bluet...
@@ -9248,8 +9285,7 @@
                         <div class="sponsored-item mt-4 pt-3 border-top">
                             <div class="row align-items-center g-2 sponsored-cleaner border rounded p-2">
                                 <div class="col-4">
-                                    <img src="electronics/lulaven.jpg" alt="Wireless HDMI"
-                                        class="img-fluid rounded">
+                                    <img src="electronics/lulaven.jpg" alt="Wireless HDMI" class="img-fluid rounded">
                                 </div>
                                 <div class="col-8">
                                     <div class="small text-truncate fw-bold">lulaven iShare Wireless HDMI Di...
@@ -9455,8 +9491,7 @@
                             </div>
                         </div>
                         <div class="main-image order-1 order-md-2">
-                            <img src="electronics/usb_1.jpg"
-                                alt="SanDisk 128GB Ultra Flair USB 3.0 Flash Drive">
+                            <img src="electronics/usb_1.jpg" alt="SanDisk 128GB Ultra Flair USB 3.0 Flash Drive">
                             <div class="mt-2 small text-secondary text-center">Click to see full view</div>
                         </div>
                     </div>
@@ -18972,8 +19007,7 @@
                             </div>
                         </div>
                         <div class="main-image order-1 order-md-2">
-                            <img src="tv/lg_1.jpg"
-                                alt="LG 32UR500K-B Ultrafine 32-inch 4K UHD Computer Monitor">
+                            <img src="tv/lg_1.jpg" alt="LG 32UR500K-B Ultrafine 32-inch 4K UHD Computer Monitor">
                             <div class="mt-2 small text-secondary text-center">Click to see
                                 full view</div>
                         </div>
@@ -24640,4 +24674,3 @@
 </body>
 
 </html>
-

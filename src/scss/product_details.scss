@@ -3,8 +3,12 @@
 // Top-level structure mirroring HTML body
 body {
 
-    // Header section
+    // Layout structure is inherited from main.scss for consistency
 
+
+    // Sidebar styles are inherited from main.scss to ensure consistent behavior
+
+    // Main Content
 
     // Main Content
     main.product-details-container {
@@ -512,36 +516,7 @@ body {
     }
 }
 
-// Footer section
-footer {
-    background-color: $amazon-navy;
-    color: $amazon-white;
-
-    .footer-top {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        a {
-            color: $amazon-white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .footer-bottom {
-        border-top: 1px solid $amazon-navy;
-        padding-top: 20px;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 12px;
-    }
-}
+// Footer styles are inherited from main.scss
 
 // Hidden elements
 .product-templates {
